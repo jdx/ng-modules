@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "express": "^4.5.1",
+    "gulp": "^3.8.6",
+    "gulp-concat": "^2.3.3"
+  }
+}

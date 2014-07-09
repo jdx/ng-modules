@@ -1,15 +1,2 @@
-var app = angular.module('app', [])
-
-app.controller('GithubCtrl', function ($scope, GithubSvc) {
-  GithubSvc.fetchStories().success(function (users) {
-    $scope.users = users
-  })
-})
-
-app.factory('GithubSvc', function ($http) {
-  return {
-    fetchStories: function () {
-      return $http.get('https://api.github.com/users')
-    }
-  }
-})
+var app=angular.module("app",[]);angular.module("app").controller("GithubCtrl",["$scope","GithubSvc",function(t,u){u.fetchStories().success(function(u){t.users=u})}]),angular.module("app").factory("GithubSvc",["$http",function(t){return{fetchStories:function(){return t.get("https://api.github.com/users")}}}]);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwic291cmNlcyI6WyJtb2R1bGUuanMiLCJnaXRodWIvZ2l0aHViLmN0cmwuanMiLCJnaXRodWIvZ2l0aHViLnN2Yy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxHQUFBLEtBQUEsUUFBQSxPQUFBLFNDQUEsU0FBQSxPQUFBLE9BQ0EsV0FBQSxjQUFBLFNBQUEsWUFBQSxTQUFBLEVBQUEsR0FDQSxFQUFBLGVBQUEsUUFBQSxTQUFBLEdBQ0EsRUFBQSxNQUFBLE9DSEEsUUFBQSxPQUFBLE9BQ0EsUUFBQSxhQUFBLFFBQUEsU0FBQSxHQUNBLE9BQ0EsYUFBQSxXQUNBLE1BQUEsR0FBQSxJQUFBIiwic291cmNlc0NvbnRlbnQiOlsidmFyIGFwcCA9IGFuZ3VsYXIubW9kdWxlKCdhcHAnLCBbXSlcbiIsImFuZ3VsYXIubW9kdWxlKCdhcHAnKVxuLmNvbnRyb2xsZXIoJ0dpdGh1YkN0cmwnLCBmdW5jdGlvbiAoJHNjb3BlLCBHaXRodWJTdmMpIHtcbiAgR2l0aHViU3ZjLmZldGNoU3RvcmllcygpLnN1Y2Nlc3MoZnVuY3Rpb24gKHVzZXJzKSB7XG4gICAgJHNjb3BlLnVzZXJzID0gdXNlcnNcbiAgfSlcbn0pXG4iLCJhbmd1bGFyLm1vZHVsZSgnYXBwJylcbi5mYWN0b3J5KCdHaXRodWJTdmMnLCBmdW5jdGlvbiAoJGh0dHApIHtcbiAgcmV0dXJuIHtcbiAgICBmZXRjaFN0b3JpZXM6IGZ1bmN0aW9uICgpIHtcbiAgICAgIHJldHVybiAkaHR0cC5nZXQoJ2h0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMnKVxuICAgIH1cbiAgfVxufSlcbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

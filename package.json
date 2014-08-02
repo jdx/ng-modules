@@ -1,4 +1,11 @@
 {
+  "name": "ng-modules",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jeff Dickey",
+    "url": "http://twitter.com/dickeyxxx"
+  },
+  "license": "ISC",
   "repository": {
     "github": "dickeyxxx/ng-modules"
   },
